@@ -1,0 +1,33 @@
+.allimg--modal--container{
+
+    .modal-content {
+        width: 768px;
+        margin: auto;
+
+        .modal-header {
+            border-bottom: none;
+            font-weight: bold;
+            
+        }
+
+        .RowLine{
+            border: 1px solid rgb(219, 219, 219);
+            opacity: 50%;
+            margin-bottom: 20px;
+        }
+
+        .ImgGrid{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px;
+            gap: 5px;
+        }
+
+        .imgs{
+            width: 120px;
+            height: 120px;
+            cursor: pointer;
+        }
+
+    }
+}

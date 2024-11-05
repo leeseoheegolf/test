@@ -1,0 +1,450 @@
+.page--admin {
+    /* 관리자 페이지 공통 */
+    width: 100%;
+    position: absolute;
+    left: 0;
+
+
+
+    .form-switch {
+        margin-right: 12px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+
+    #container_section {
+        max-width: 100%;
+        padding-top: 12px;
+
+        .table {
+            text-align: center;
+        }
+    }
+
+}
+
+
+.page--admin--home--container {
+
+
+    /* 관리자 홈 페이지 */
+    .select--wrap {
+        padding-top: 50px;
+        display: flex;
+        width: 1400px;
+        justify-content: space-between;
+        margin: auto;
+
+        .select--total {
+
+            .select--total--box {
+                width: 400px;
+                border-radius: 10px;
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+
+                ul {
+                    font-size: 30px;
+                    padding-right: 30px;
+
+                    .selYear {
+                        font-size: 25px;
+                        margin-bottom: 30px;
+                    }
+
+                    .commossion--box,
+                    .reservation--box {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        font-weight: bold;
+
+
+                        .info--title {
+                            display: flex;
+                            gap: 10px;
+                            align-items: center;
+                            font-size: 20px;
+
+
+                            .commossion--icon {
+                                color: rgba(54, 162, 235);
+
+
+                            }
+
+                            .reservation--icon {
+                                color: rgba(255, 99, 132);
+                            }
+                        }
+
+                        .info {
+                            margin-left: 31px;
+
+                            .commossion {
+                                color: rgba(54, 162, 235);
+                            }
+
+                            .reservation {
+                                color: rgba(255, 99, 132);
+                            }
+                        }
+                    }
+
+                    .reservation--box {
+                        margin-top: 20px;
+                    }
+
+                    .branch--info {
+                        display: flex;
+                        font-weight: normal;
+                        flex-wrap: wrap;
+
+                        .info {
+                            width: 40%;
+                            margin-bottom: 10px;
+                            font-size: 16px;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .select--chart--box {
+            display: flex;
+            flex-direction: column;
+            gap: 13px;
+
+            .chart {
+                display: flex;
+                justify-content: center;
+                width: 900px;
+                height: 350px;
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                border-radius: 10px;
+            }
+
+            .dropdown--box {
+
+                .dropdown>button {
+                    background-color: #fff;
+                    border-color: var(--lightGrayColor);
+                    color: black;
+                    width: 90px;
+                }
+
+                .dropdown--menu {
+                    min-width: 90px;
+                }
+            }
+
+        }
+
+        .select--title {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: var(--lightGrayColor3);
+        }
+
+
+    }
+
+    .select--wrap:last-child {
+        margin-bottom: 120px;
+    }
+
+}
+
+
+.page--event--manager--container {
+    /* 관리자 이벤트 페이지 */
+
+    #table_entire_event {
+
+        .event_no {
+            width: 10%;
+        }
+
+        .event_title {
+            width: 40%;
+        }
+
+        .event_period {
+            width: 35%;
+        }
+
+        .btn_container {
+            width: 15%;
+        }
+    }
+}
+
+
+.page--hotel--manager--container {
+    height: 100%;
+
+    #table_entire_hotel {
+        .hotel_no {
+            width: 5%;
+        }
+
+        .hotel_name {
+            width: 32.5%;
+        }
+
+        .hotel_rating {
+            width: 10%;
+        }
+
+        .hotel_address {
+            width: 22.5%;
+        }
+
+        .hotel_commission {
+            width: 10%;
+        }
+
+        .hotel_update {
+            width: 20%;
+        }
+    }
+
+    /* 관리자 호텔 객실 페이지 */
+    .page--wrap {
+        display: flex;
+        gap: 20px;
+        padding-left: 12px;
+        padding-right: 12px;
+
+        #container_section {
+            flex: 5;
+        }
+
+        .table--wrap {
+            min-height: 500px;
+        }
+
+
+    }
+
+    .selHotel {
+        background-color: blanchedalmond;
+    }
+
+    .room--td {
+        padding: 0;
+    }
+}
+
+
+
+
+
+.page--review--manager--container {
+    /* 관리자 리뷰 페이지 */
+
+    #table_entire_review {
+
+        .review_no {
+            width: 5%;
+        }
+
+        .user_name {
+            width: 7.5%;
+        }
+
+        .hotel_name {
+            width: 15%;
+        }
+
+        .room_name {
+            width: 22.5%;
+        }
+
+        .review_rating {
+            width: 5%;
+        }
+
+        .review_content {
+            width: 25%;
+        }
+
+        .review_date {
+            width: 12.5%;
+        }
+
+        .btn_container {
+            width: 7.5%;
+        }
+    }
+}
+
+
+.page--user--manager--container {
+    /* 관리자 회원 페이지 */
+
+    #table_entire_user {
+
+        .user_no {
+            width: 7.5%;
+        }
+
+        .user_name {
+            width: 10%;
+        }
+
+        .user_nick {
+            width: 15%;
+        }
+
+        .user_email {
+            width: 20%;
+        }
+
+        .user_phone {
+            width: 15%;
+        }
+
+        .user_cDate {
+            width: 12.5%;
+        }
+
+        .user_point {
+            width: 10%;
+        }
+
+        .user_stat {
+            width: 10%;
+        }
+    }
+}
+
+
+.page--hotel--chart--manager--container {
+
+    /* 관리자 호텔 차트 페이지 */
+    .table--wrap {
+        min-height: 290px;
+    }
+
+    .dropdown--box {
+        margin-right: 15px;
+
+        .dropdown>button {
+            background-color: #fff;
+            border-color: var(--lightGrayColor);
+            color: black;
+            width: 90px;
+        }
+
+        .dropdown--menu {
+            min-width: 90px;
+        }
+    }
+
+    .select--wrap {
+        padding-top: 100px;
+        display: flex;
+        width: 1400px;
+        justify-content: space-between;
+        margin: auto;
+
+        .select--total {
+
+            .select--total--box {
+                width: 400px;
+                border-radius: 10px;
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+
+                ul {
+                    font-size: 25px;
+                    padding-right: 30px;
+
+
+                    .hotelName {
+                        font-size: 20px;
+                        margin-bottom: 30px;
+                        font-weight: bold;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+
+                    .commossion--box,
+                    .reservation--box {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        font-weight: bold;
+
+
+                        .info--title {
+                            display: flex;
+                            gap: 10px;
+                            align-items: center;
+                            font-size: 20px;
+
+
+                            .commossion--icon {
+                                color: rgba(54, 162, 235);
+
+
+                            }
+
+                            .reservation--icon {
+                                color: rgba(255, 99, 132);
+                            }
+                        }
+
+                        .info {
+                            margin-left: 31px;
+
+                            .commossion {
+                                color: rgba(54, 162, 235);
+                            }
+
+                            .reservation {
+                                color: rgba(255, 99, 132);
+                            }
+                        }
+                    }
+
+                    .reservation--box {
+                        margin-top: 20px;
+                    }
+
+                    .branch--info {
+                        display: flex;
+                        font-weight: normal;
+                        flex-wrap: wrap;
+
+                        .info {
+                            width: 40%;
+                            margin-bottom: 10px;
+                            font-size: 16px;
+                        }
+                    }
+
+                }
+            }
+        }
+
+
+
+        .chart {
+            display: flex;
+            justify-content: center;
+            width: 900px;
+            height: 500px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            border-radius: 10px;
+        }
+
+    }
+}

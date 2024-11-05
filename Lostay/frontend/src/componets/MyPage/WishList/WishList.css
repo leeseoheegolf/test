@@ -1,0 +1,148 @@
+.wishlist--component--container {
+    padding: 10px 10px;
+    width: 50%;
+    border-bottom: 2px solid var(--lightGrayColor4);
+
+    a {
+        text-decoration: none;
+        color: black;
+
+
+        .wishlist--wrap {
+            display: flex;
+            gap: 10px;
+            padding: 20px 5px;
+          
+            
+
+            .wishlist--img {
+                position: relative;
+
+                img {
+                    width: 110px;
+                    height: 120px;
+                    border-radius: 10px;
+                }
+
+                .wishlist--icon {
+                    position: absolute;
+                    z-index: 2;
+                    top: 5px;
+                    right: 5px;
+
+                    img {
+                        width: 35px;
+                        height: 35px;
+                    }
+
+                    .icon{
+                        margin-top: 3px;
+                        margin-right: 3px;
+                        width: 28px;
+                        height: 28px;
+                    }
+
+                }
+
+            }
+
+
+            .wishlist--box {
+                flex: 1 2;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .hotel--info {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2px;
+
+                    .review--wrap {
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+
+                        .review--box {
+                            display: flex;
+                            align-items: center;
+                            padding-left: 7px;
+                            width: 35px;
+                            height: 20px;
+                            border-radius: 7px;
+                            background-color: var(--starColor);
+                            margin-right: 4px;
+
+                            .review--avg {
+                                font-size: 13px;
+                            }
+
+                            .star--Icon {
+                                width: 10px;
+                                height: 10px;
+                                margin-right: 3px
+                            }
+                        }
+
+                        .totalReviewCount {
+                            color: var(--lightGrayColor2);
+                            font-size: 13px;
+                        }
+
+                    }
+                }
+
+                .hotel--info>div:nth-child(1) {
+                    font-size: 11px;
+                    color: var(--lightGrayColor2);
+                    
+                }
+
+                .hotel--info>div:nth-child(2) {
+                    font-weight: bold;
+                    font-size: 15px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    margin-bottom: 1px;
+                    
+                }
+
+                .hotel--info>div:nth-child(3) {
+                    font-size: 15px;
+                }
+
+                .hotel--price--wrap {
+                    display: flex;
+                    justify-content: end;
+                    gap: 5px;
+                    margin-top: 20px;
+                    align-items: end;
+                    font-size: 14px;
+
+                    .hotel--discount--price--wrap {
+                        display: flex;
+                        flex-direction: column;
+
+
+                        .discount {
+                            color: var(--saleIconColor);
+                            font-weight: bold;
+                            font-size: 11px;
+                        }
+
+                        .roomDcPrice {
+                            color: var(--lightGrayColor2);
+                            font-size: 12px;
+                            text-decoration: line-through;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.wishlist--component--container.wishlist--border{
+    border-right: 2px solid var(--lightGrayColor4);
+}

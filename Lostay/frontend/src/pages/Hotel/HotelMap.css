@@ -1,0 +1,211 @@
+.hotel--map--container{
+
+    padding: 0 !important;
+
+
+    .TopBox{
+        position: relative;
+        width: 100%;
+        height: 150px;
+        background-color: rgb(5, 122, 255);
+        
+        
+    }
+
+    .FormBox{
+        position: absolute;
+        left: 5%;
+        top: 10%;
+        width: 90%;
+    }
+
+    input::placeholder {
+        color: white;
+        
+    }
+
+    #start{
+        width: 100%;
+        height: 43px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        margin-bottom: 5px;
+        padding: 10px;
+        color: rgb(255, 255, 255);
+        background-color: rgb(129, 173, 255);
+    }
+
+    #end{
+        width: 100%;
+        height: 43px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        padding: 10px;
+        color: white;
+        background-color: rgb(129, 173, 255);
+    }
+
+    .IconBox{
+        margin-top: 7px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .car, .bus, .walk{
+        cursor: pointer;
+        text-align: center;
+        font-size: 18px;
+        width: 70px;
+        height: 30px;
+        border-radius: 10px;
+        color: rgb(49, 49, 49);
+    }
+
+    .car:hover, .bus:hover, .walk:hover{
+        color: white;
+        background-color: rgb(129, 173, 255);
+    }
+
+
+    #KakaoMap{
+        position: relative;
+        width: 100%;
+        height: 810px;
+    }
+
+    .FindInfo{
+        position: absolute;
+        top: 80%;
+        left: 2.5%;
+        z-index: 10;
+        width: 95%;
+        height: 100px;
+        background-color: white;
+        border: 1px solid gray;
+        border-radius: 10px;
+        padding: 15px;
+    }
+
+    .FindInfo.hidden{
+        visibility: hidden;
+    }
+
+    .timeInfo{
+        display: flex;
+        align-items: end;
+    }
+
+    .fareInfo{
+        display: flex;
+    }
+
+    #time{
+        color: rgb(0, 143, 238);
+        font-size: 25px;
+    }
+
+    #km{
+        margin-left: 5px;
+    }
+
+    #toll{
+        color: gray;
+    }
+
+    #taxi{
+        color: gray;
+        margin-left: 4px;
+    }
+
+
+
+    .busInfo{
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+        height: 755px;
+        background-color: white;
+        border: 1px solid gray;
+        border-radius: 10px;
+        padding-top: 15px;
+        position: relative;
+    }
+
+    .busInfo.hidden{
+        visibility: hidden;
+    }
+
+    .category{
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #categoryItem{
+        cursor: pointer;
+        text-align: center;
+        align-items: center;
+        width: 100px;
+        height: 30px;
+    }
+
+    .RowLine {
+        border: 1px solid rgb(219, 219, 219);
+        opacity: 50%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .busContent{
+        overflow-y: auto;
+        max-height: 670px;
+    }
+
+    .busRoads{
+        margin-left: 10px;
+        cursor: pointer;
+    }
+
+    .totalTime{
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    .busroadInfo{
+        display: flex;
+        gap: 10px;
+        color: gray;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    #busIcon{
+        color: rgb(85, 85, 85);
+        width: 30px;
+        margin-bottom: 3px;
+    }
+
+    #routeName{
+        font-size: 14px;
+        color: gray;
+        margin-left: 7px;
+        margin-bottom: 10px;
+    }
+
+    #NonRoad{
+        margin-top: 150px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    #banIcon{
+        color: rgb(255, 134, 134);
+        margin-bottom: 5px;
+        margin-right: 7px;
+    }
+}

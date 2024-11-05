@@ -1,0 +1,52 @@
+.navbar--container {
+    height: 55px;
+    position: fixed;
+    width: 768px;
+    bottom: 0;
+    background-color: var(--navbarBackgroundColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid var(--lightGrayColor);
+    z-index: 1000;
+
+    .navbar--wrap {
+        width: 320px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .link {
+            text-decoration: none;
+            color: black;
+
+
+            .home {
+                border-radius: 10px;
+                width: 35px;
+                height: 35px;
+                font-size: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: var(--logoColor);
+                font-weight: bold;
+            }
+        }
+
+        .icon {
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .navbar--container {
+        width: 100%;
+        /* 화면 크기에 맞게 조정 */
+    }
+}
